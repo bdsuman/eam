@@ -31,14 +31,14 @@
     <title>@yield('title')</title>
 
     <!-- vendor css -->
-    <link href="{{ asset('assets/lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/lib/rickshaw/rickshaw.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/lib/select2/css/select2.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('assets/lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('assets/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('assets/lib/rickshaw/rickshaw.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('assets/lib/select2/css/select2.min.css') }}" rel="stylesheet">
 
     <!-- Bracket CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bracket.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/bracket.dark.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/bracket.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/bracket.dark.css') }}">
     @stack('style')
   </head>
 
@@ -67,28 +67,28 @@
     <!-- ########## END: MAIN PANEL ########## -->
     @yield('modal')
     @stack('script')
-    <script src="{{ asset('assets/lib/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/jquery-ui/ui/widgets/datepicker.js') }}"></script>
-    <script src="{{ asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/moment/min/moment.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/peity/jquery.peity.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/rickshaw/vendor/d3.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/rickshaw/vendor/d3.layout.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/rickshaw/rickshaw.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/jquery.flot/jquery.flot.js') }}"></script>
-    <script src="{{ asset('assets/lib/jquery.flot/jquery.flot.resize.js') }}"></script>
-    <script src="{{ asset('assets/lib/flot-spline/js/jquery.flot.spline.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/echarts/echarts.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/select2/js/select2.full.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery-ui/ui/widgets/datepicker.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/moment/min/moment.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/peity/jquery.peity.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/rickshaw/vendor/d3.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/rickshaw/vendor/d3.layout.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/rickshaw/rickshaw.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery.flot/jquery.flot.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery.flot/jquery.flot.resize.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/flot-spline/js/jquery.flot.spline.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/echarts/echarts.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/select2/js/select2.full.min.js') }}"></script>
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyAq8o5-8Y5pudbJMJtDFzb8aHiWJufa5fg"></script>
-    <script src="{{ asset('assets/lib/gmaps/gmaps.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/gmaps/gmaps.min.js') }}"></script>
 
-    <script src="{{ asset('assets/js/bracket.js') }}"></script>
-    <script src="{{ asset('assets/js/map.shiftworker.js') }}"></script>
-    <script src="{{ asset('assets/js/ResizeSensor.js') }}"></script>
-    <script src="{{ asset('assets/js/dashboard.dark.js') }}"></script>
+    <script src="{{ static_asset('assets/js/bracket.js') }}"></script>
+    <script src="{{ static_asset('assets/js/map.shiftworker.js') }}"></script>
+    <script src="{{ static_asset('assets/js/ResizeSensor.js') }}"></script>
+    <script src="{{ static_asset('assets/js/dashboard.dark.js') }}"></script>
 
   </body>
 </html>

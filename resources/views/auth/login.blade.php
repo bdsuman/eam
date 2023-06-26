@@ -32,12 +32,12 @@
 
     <!-- vendor css -->
    
-    <link href="{{ asset('assets/lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('assets/lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ static_asset('assets/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
 
     <!-- Bracket CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bracket.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/bracket.dark.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/bracket.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/bracket.dark.css') }}">
   </head>
 
   <body>
@@ -49,16 +49,16 @@
         <div class="tx-center mt-5 mg-b-60">
            
             <div class="form-group">
-                <a href="{{ route('google.login') }}" ><img src="{{ asset('assets/img/google.png') }}" alt="" width="80px" height="50px"></a>
+                <a href="{{ route('google.login') }}" ><img src="{{ static_asset('assets/img/google.png') }}" alt="" width="80px" height="50px"></a>
             </div>
 
         </div>
       </div><!-- login-wrapper -->
     </div><!-- d-flex -->
 
-    <script src="{{ asset('assets/lib/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/lib/jquery-ui/ui/widgets/datepicker.js') }}"></script>
-    <script src="{{ asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/jquery-ui/ui/widgets/datepicker.js') }}"></script>
+    <script src="{{ static_asset('assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
   </body>
 </html>
