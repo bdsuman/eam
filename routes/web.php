@@ -23,8 +23,26 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/blank', [App\Http\Controllers\HomeController::class, 'blank'])->name('blank');
 
 // Google login
 Route::get('login/google', [App\Http\Controllers\Auth\LoginController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('login/google/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleGoogleCallback']);
+
+Route::group(['middleware' => 'auth'], function () {
+    // admin Routs
+    Route::group(['prefix' => 'admin'], function() {
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.admin');
+        // Route::controller(CheckoutController::class)->group(function () {
+            
+        // });
+    });
+
+    // employee Routs
+    Route::group(['prefix' => 'employee'], function() {
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'indexEmployee'])->name('home.employee');
+        // Route::controller(CheckoutController::class)->group(function () {
+            
+        // });
+    });
+});

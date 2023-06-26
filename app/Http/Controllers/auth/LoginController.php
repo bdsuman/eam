@@ -50,7 +50,14 @@ class LoginController extends Controller
  
         // $user->token
         $this->_registerOrLoginUser($user);
-        return redirect()->route('home');
+        if('admin'==Auth::user()->user_type){
+            return redirect()->route('home.admin');
+        }else if('employee'==Auth::user()->user_type){
+            return redirect()->route('home.employee');
+        }else{
+            return redirect()->route('blank');
+        }
+       
     }
 
     protected function _registerOrLoginUser($data){

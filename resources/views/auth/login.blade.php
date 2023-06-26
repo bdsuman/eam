@@ -45,7 +45,7 @@
     <div class="d-flex align-items-center justify-content-center ht-100v">
 
       <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 bg-br-primary rounded bd bd-white-1">
-        <div class="signin-logo tx-center tx-28 tx-bold tx-white"><span class="tx-normal">[</span> Only <span class="tx-info">Google</span> <span class="tx-normal">]</span></div>
+        <div class="signin-logo tx-center tx-28 tx-bold tx-white"><span class="tx-normal">[</span> Login with <span class="tx-info">Google</span> <span class="tx-normal">]</span></div>
         <div class="tx-center mt-5 mg-b-60">
            
             <div class="form-group">

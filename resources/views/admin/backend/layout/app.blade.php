@@ -44,9 +44,9 @@
 
   <body>
 
-    @include('backend/inc/left')
-    @include('backend/inc/head')
-    @include('backend/inc/right')
+    @include('admin/backend/inc/left')
+    @include('admin/backend/inc/head')
+    @include('admin/backend/inc/right')
 
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
